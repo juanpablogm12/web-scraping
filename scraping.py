@@ -15,18 +15,18 @@ h2_todos = soup.find_all('h2')
 #     print (seccion.get_text(strip=True))
 
 srcs = soup.find_all('img', src=True)
-for elemento in srcs: 
-    if elemento['src'].endswith(".jpg"):
-      print(elemento)
+# for elemento in srcs: 
+#     if elemento['src'].endswith(".jpg"):
+#       print(elemento)
 
 # url_imagenes = []
 
-# for i, imagen in enumerate(srcs):
+for i, imagen in enumerate(srcs):
     
-#     if imagen['src'].endswith('.png'):
+    if imagen['src'].endswith('.png'):
         
-#         print(imagen)
-#         r = requests.get(f"{URL_BASE}/{imagen['src']}")
+        print(imagen)
+        # r = requests.get(f"{URL_BASE}/{imagen['src']}")
         
-#         with open(f'imagen_{i}.png', 'wb') as f:
-#             f.write(r.content)
+        # with open(f'imagen_{i}.png', 'wb') as f:
+        #     f.write(r.content)
